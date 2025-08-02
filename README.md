@@ -1,6 +1,6 @@
-# 🦷 Apollonia Dental Practice Employee Management App
+# Apollonia Dental Practice Employee Management App
 
-## 📖 Overview
+## Overview
 A **full-stack CRUD web application** to manage employees and departments for **Apollonia Dental Practice**.  
 Built with **Node.js**, **Express**, **MongoDB**, and a responsive **HTML/CSS/JavaScript frontend**.  
 Supports adding, editing (via modal), deleting, and sorting employees by **first name**, **last name**, and **department(s)**.
@@ -10,7 +10,7 @@ Supports adding, editing (via modal), deleting, and sorting employees by **first
 
 ---
 
-## 🎯 Features
+## Features
 - **CRUD operations** for employees and departments
 - **Modal-based editing** for a better user experience
 - **Multi-select department assignment**
@@ -21,7 +21,7 @@ Supports adding, editing (via modal), deleting, and sorting employees by **first
 
 ---
 
-## 🛠 Tech Stack
+## Tech Stack
 **Frontend:**
 - HTML5, CSS3, JavaScript
 - DataTables.js
@@ -36,11 +36,11 @@ Supports adding, editing (via modal), deleting, and sorting employees by **first
 
 ---
 
-## ⚙️ Access Web App Here (https://apollonia-crud-app.onrender.com/)
+## Access Web App Here (https://apollonia-crud-app.onrender.com/)
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 apollonia-crud-app/
 │── public/               # Frontend static files (HTML, CSS, JS)
 │── models/               # Mongoose models (Department, Employee)
