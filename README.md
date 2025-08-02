@@ -42,6 +42,7 @@ Supports adding, editing (via modal), deleting, and sorting employees by **first
 
 ## Project Structure
 apollonia-crud-app/
+
 │── public/               # Frontend static files (HTML, CSS, JS)
 
 │── models/               # Mongoose models (Department, Employee)
