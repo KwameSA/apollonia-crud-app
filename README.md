@@ -36,4 +36,44 @@ Supports adding, editing (via modal), deleting, and sorting employees by **first
 
 ---
 
+## ⚙️ Access Web App Here (https://apollonia-crud-app.onrender.com/)
+
+---
+
 ## 📂 Project Structure
+apollonia-crud-app/
+│── public/ # Frontend static files (HTML, CSS, JS)
+│── models/ # Mongoose models (Department, Employee)
+│── routes/ # Express routes for API
+│── controllers/ # Controller logic for CRUD operations
+│── config/ # Database connection
+│── seed.js # Script to seed initial data
+│── app.js # Express server setup
+│── Dockerfile # Docker configuration
+│── docker-compose.yml # Multi-container setup for app + Mongo
+│── .env.example # Example environment variables
+│── README.md # Documentation
+
+Deployment
+Backend & frontend deployed on Render
+
+Database hosted on MongoDB Atlas
+
+Environment variables set in Render dashboard
+
+What I Learned
+* Connecting Node.js to MongoDB Atlas
+
+* Creating REST APIs with Express.js
+
+* Managing state and UI updates in vanilla JS
+
+* Deploying full-stack apps with Docker & Render
+
+* Handling environment variables securely in production
+
+Author
+Samuel Akuffo
+
+
+
