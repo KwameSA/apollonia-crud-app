@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Apollonia Employee Manager</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Apollonia Dental Practice</h1>
+      </header>
+
+      <section class="form-section">
+        <h2>Add Employee</h2>
+        <form id="employee-form">
+          <div id="inputLabels"></div>
+          <div id="inputAdd">
+            <div class="form-group">
+              <label for="firstName">First Name</label>
+              <input type="text" id="firstName" placeholder="First Name" required />
+            </div>
+            <div class="form-group">
+              <label for="lastName">Last Name</label>
+              <input type="text" id="lastName" placeholder="Last Name" required />
+            </div>
+            <div class="form-group">
+              <label for="departments">Departments (Hold Ctrl to Select Multiple)</label>
+              <select id="departments" multiple aria-label="Select Departments">
+                <label>Select Employee Department</label>
+              </select>
+            </div>
+            <div class="form-group" id="addEmployee"><button type="submit">Add Employee</button></div>
+          </div>
+        </form>
+      </section>
+
+      <section class="table-section">
+        <h2>Employees</h2>
+        <table id="employeeFTable">
+          <thead>
+            <tr>
+              <th>First Name</th>
+              <th>Last Name</th>
+              <th>Departments</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody id="employee-table"></tbody>
+        </table>
+      </section>
+    </div>
+
+    <div id="edit-modal" class="modal hidden">
+      <div class="modal-content">
+        <span class="close-button" id="close-edit-modal">×</span>
+        <h2>Edit Employee</h2>
+        <form id="edit-form">
+          <div class="form-group">
+            <label for="edit-firstName">First Name</label>
+            <input type="text" id="edit-firstName" placeholder="First Name" required />
+          </div>
+
+          <div class="form-group">
+            <label for="edit-lastName">Last Name</label>
+            <input type="text" id="edit-lastName" placeholder="Last Name" required />
+          </div>
+
+          <div class="form-group">
+            <label for="edit-departments">Departments (Hold Ctrl to Select Multiple)</label>
+            <select id="edit-departments" multiple></select>
+          </div>
+
+          <button type="submit">Update Employee</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
+  </body>
+</html>

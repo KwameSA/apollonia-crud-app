@@ -1,0 +1,233 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #f9fafb;
+  color: #333;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 30px 40px;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  text-align: center;
+  font-weight: 700;
+  color: #0077cc;
+  margin-bottom: 30px;
+}
+
+h2 {
+  color: #0077cc;
+  border-bottom: 2px solid #0077cc;
+  padding-bottom: 8px;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  /* flex-wrap: wrap; */
+  gap: 15px;
+  margin-bottom: 40px;
+}
+
+form input[type="text"] {
+  flex: 1 1 200px;
+  padding: 10px 15px;
+  font-size: 16px;
+  border: 2px solid #0077cc;
+  border-radius: 6px;
+  transition: border-color 0.3s ease;
+}
+
+form select {
+  height: 50px;
+  padding: 10px 15px;
+  font-size: 16px;
+  border: 2px solid #0077cc;
+  border-radius: 6px;
+  transition: border-color 0.3s ease;
+}
+
+#departments {
+  max-width: 300px;
+}
+
+form input[type="text"]:focus,
+form select:focus {
+  outline: none;
+  border-color: #004a99;
+}
+
+form select {
+  /* height: 120px; */
+  background: #fff;
+}
+
+.form-group label {
+  margin-bottom: 10px;
+}
+
+button[type="submit"] {
+  background-color: #0077cc;
+  color: #fff;
+  border: none;
+  padding: 12px 25px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #005fa3;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+thead {
+  background-color: #0077cc;
+  color: #fff;
+}
+
+th,
+td {
+  padding: 15px 20px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f4f8fc;
+}
+
+tbody tr:hover {
+  background-color: #e1ecf9;
+}
+
+button.delete-btn {
+  background-color: #d9534f;
+  border: none;
+  padding: 8px 15px;
+  color: white;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button.delete-btn:hover {
+  background-color: #b52b27;
+}
+
+button.edit-btn {
+  background-color: #4f86d9;
+  border: none;
+  padding: 8px 15px;
+  color: white;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button.edit-btn:hover {
+  background-color: #173997;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal.hidden {
+  display: none;
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  width: 500px;
+  position: relative;
+}
+
+.close-button {
+  position: absolute;
+  top: 0.5rem;
+  right: 1rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+.editDelB {
+  display: flex;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+#inputAdd {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+}
+
+#firstName,
+#lastName,
+#edit-firstName,
+#edit-lastName {
+  max-height: 50px;
+}
+
+#addEmployee {
+  margin-top: 34px;
+}
+
+.dt-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.dataTables_length {
+  float: none;
+}
+
+.dataTables_filter {
+  float: none;
+}
