@@ -70,21 +70,6 @@ async function startEditEmployee(id) {
   const res = await fetch(`/api/employees/${id}`);
   const emp = await res.json();
 
-  form.firstName.value = emp.firstName;
-  form.lastName.value = emp.lastName;
-
-  Array.from(deptSelect.options).forEach((option) => {
-    option.selected = emp.departments.some((d) => d._id === option.value);
-  });
-
-  editingEmployeeId = id;
-  form.querySelector("button[type='submit']").textContent = "Update Employee";
-}
-
-async function startEditEmployee(id) {
-  const res = await fetch(`/api/employees/${id}`);
-  const emp = await res.json();
-
   editFirstName.value = emp.firstName;
   editLastName.value = emp.lastName;
 
@@ -133,15 +118,15 @@ editForm.addEventListener("submit", async (e) => {
   await loadEmployees();
 });
 
-async function deleteEmployee(id) {
-  await fetch(`/api/employees/${id}`, { method: "DELETE" });
-  if (editingEmployeeId === id) {
-    form.reset();
-    editingEmployeeId = null;
-    form.querySelector("button[type='submit']").textContent = "Add Employees";
-  }
-  await loadEmployees();
-}
+// async function deleteEmployee(id) {
+//   await fetch(`/api/employees/${id}`, { method: "DELETE" });
+//   if (editingEmployeeId === id) {
+//     form.reset();
+//     editingEmployeeId = null;
+//     form.querySelector("button[type='submit']").textContent = "Add Employees";
+//   }
+//   await loadEmployees();
+// }
 
 async function deleteEmployee(id) {
   await fetch(`/api/employees/${id}`, { method: "DELETE" });
