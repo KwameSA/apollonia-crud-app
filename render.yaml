@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: apollonia-crud
+    env: docker
+    repo: https://github.com/KwameSA/apollonia-crud-app
+    plan: free
+    branch: main
+    dockerfilePath: ./Dockerfile
+    envVars:
+      - key: MONGO_URI
+        sync: false
+      - key: PORT
+        value: 3000
