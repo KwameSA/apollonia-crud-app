@@ -54,14 +54,14 @@ apollonia-crud-app/
 │── .env.example           # Example environment variables
 │── README.md              # Documentation
 
-
+---
 Deployment
 Backend & frontend deployed on Render
 
 Database hosted on MongoDB Atlas
 
 Environment variables set in Render dashboard
-
+---
 What I Learned
 * Connecting Node.js to MongoDB Atlas
 
@@ -72,7 +72,7 @@ What I Learned
 * Deploying full-stack apps with Docker & Render
 
 * Handling environment variables securely in production
-
+---
 Author
 Samuel Akuffo
 
